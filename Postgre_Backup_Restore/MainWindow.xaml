@@ -1,0 +1,14 @@
+﻿<Window x:Class="Postgre_Backup_Restore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:UI="clr-namespace:Postgre_Backup_Restore.UI"
+        Title="MainWindow" Height="377" Width="825" Background="Gray">
+    <Grid>
+        <ListBox x:Name="Combo" HorizontalAlignment="Left" Height="241" Margin="10,4,0,0" VerticalAlignment="Top" Width="404">
+
+        </ListBox>
+        <Button Content="Backup" Click="Button_Click" HorizontalAlignment="Left" Margin="279,253,0,0" VerticalAlignment="Top" Width="135" Height="40"/>
+        <UI:ParameterUi x:Name="UiParameter" Margin="467,0,45,29" OnSaveClick="UiParameter_OnOnSaveClick" OnBackupClick="UiParameter_OnOnBackupClick" HorizontalAlignment="Left" VerticalAlignment="Top"></UI:ParameterUi>
+        <CheckBox Foreground="White" IsChecked="True" Content="TÜMÜNÜ SEÇ" Click="ButtonBase_OnClick"  HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
